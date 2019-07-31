@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title%>-后台教程管理</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+        "></script>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">请登录</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="error-item">
+                        <i class="fa fa-minus-circle error-icon"></i>
+                        <p class="err-msg">Error</p>
+                    </div>
+                    <form role="form" onSubmit={this.onLogin}>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="User Name" name="username" id="username"
+                                type="text" autoComplete="off" autoFocus />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Password" name="password" id="password"
+                                type="password" />
+                        </div>
+                        <button type="button" id="submit" class="btn btn-lg btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

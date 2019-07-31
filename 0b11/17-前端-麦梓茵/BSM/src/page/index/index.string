@@ -1,0 +1,15 @@
+{{#list}}
+<table class="main-table" data-id={{productId}} data-des={{productInstr}} data-icon={{productIcon}} data-pn="{{productName}}">
+    <tr>
+        <td class="main-cell cell-product"><a class="link">{{productName}}</a></td>
+        <td class="main-cell cell-good gr">{{like}}</td>
+        <td class="main-cell cell-bad gr">{{dislike}}</td>
+        <td class="main-cell cell-readNum gr">{{view}}</td>
+        <td class="main-cell cell-time">{{updateTime}}</td>
+        <td class="main-cell cell-operate">
+            <a class="edit link">编辑</a>|<a class="delete link">删除</a>
+        </td>
+    </tr>
+</table>
+{{/list}}
+

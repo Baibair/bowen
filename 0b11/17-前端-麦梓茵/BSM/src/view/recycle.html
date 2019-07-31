@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title%>-后台教程管理</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav.html')  %>
+    <%= require('html-loader!./layout/nav-side.html')  %>
+    <div class="content move" id="content">
+        
+        <div class="main-header">
+            <table class="main-table" style="background:#eee;">
+                <tr>
+                    <th class="main-cell cell-product">名称</th>
+                    
+                    <th class="main-cell cell-delect">删除</th>
+                    <th class="main-cell cell-rec">恢复</th>
+                </tr>
+            </table>
+        </div>
+        <div class="main-list">
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

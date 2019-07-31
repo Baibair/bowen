@@ -1,0 +1,54 @@
+<div class="modal close">
+    <div class="modal-container">
+        <div class="modal-header">
+            {{#isUpdate}}
+            <h1 class="modal-title">编辑三级分类</h1>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <h1 class="modal-title">新建三级分类</h1>
+            {{/isUpdate}}
+            <i class="fa fa-close close"></i>  
+        </div>
+        <div class="modal-body">
+            <div class="form">
+                
+                <div class="form-line">
+                    <label class="label" for="fgroupName">
+                        <span class="required">*</span>
+                        一级分类名称
+                    </label>
+                    <select class="form-item sel" id="fgroupName">
+                        <option value="">请选择</option>
+                    </select>
+                    
+                </div>
+                <div class="form-line">
+                    <label class="label" for="sgroupName">
+                        <span class="required">*</span>
+                        二级分类名称
+                    </label>
+                    <select class="form-item sel" id="sgroupName">
+                    {{#isUpdate}}
+                        <option value="{{data.groupName2}}" data-id={{data.groupId2}}>{{data.groupName2}}</option>
+                    {{/isUpdate}}
+                    {{^isUpdate}}
+                        <option value="">请选择</option>
+                    {{/isUpdate}}
+                    </select>
+                    
+                </div>
+                <div class="form-line">
+                    <label class="label" for="groupName">
+                        <span class="required">*</span>三级分类名称
+                    </label>
+                    <input class="form-item" id="tgroupName" placeholder="请输入三级分类名称" data-id={{data.groupId}} value="{{data.groupName}}" />
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-true">确定</button>
+            <button class="btn btn-false">取消</button>
+        </div>
+    </div>
+</div>

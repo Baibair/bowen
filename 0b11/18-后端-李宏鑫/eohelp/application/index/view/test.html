@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+       // var list = new Array();
+       var formdata = new FormData();
+        function addfile(){
+            var file = document.getElementById('contentimg').files[0];
+            formdata.append('contentimg',file);
+        }
+
+        function po(){
+
+
+
+
+            //list.push(file);
+
+            formdata.append('productName','API Gateway-EE');
+            formdata.append('productInstr','API微服务网关-企业版');
+
+
+            $.ajax({
+                url:'http://eohelp/content/sendimg',
+                type:'POST',
+           //     enctype:'multipart/form-data',
+                processData:false,
+                contentType: false,
+                data:formdata,
+                dataType: 'json',
+
+                success:function(arr){
+                    var ectimg = document.getElementById('ectimg');
+                    ectimg.setAttribute('src',"http://10.30.4.212/eohelp/public/"+eval(arr).data.imgSource);
+                }
+
+            })
+
+            // $.ajax({
+            //     url:'http://www.tp5.com/index/user/update',
+            //     type:'POST',
+            //
+            //
+            //
+            //     success:function(arr){
+            //         // var des = eval(arr);
+            //         // document.getElementById('target').innerText=des.key+" "+des.value;
+            //         // alert(des.id);
+            //     }
+            //
+            // })
+        }
+
+
+    </script>
+</head>
+<body>
+<img src="http://10.30.4.212/eohelp/public/static/production/20190724165047.png" id = "ectimg">
+<input  type="file" id="contentimg" name="key">
+<button onclick="addfile()">添加</button>
+<button onclick="po()">发送</button>
+<div id="target"></div>
+
+</body>
+</html>

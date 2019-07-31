@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= htmlWebpackPlugin.options.title%>-后台教程管理</title>
+</head>
+
+<body>
+  <%= require('html-loader!./layout/nav.html')  %>
+  <%= require('html-loader!./layout/nav-side.html')  %>
+
+  <div class="edit move">
+    <div class="edit-top">
+      <span class="returnCourse"><i class="fa fa-mail-reply"></i>返回教程列表</span>
+      <button class="save" id="save">SAVE</button>
+    </div>
+    <div class="edit-head">
+      <span class="edit-title"><span class="sign">标题：</span><input class="edit-title-content" /></span>
+      <span class="edit-class"><span class="sign">分类：</span><select class="edit-class-chose"></select></span>
+    </div>
+    <div class="edit-body">
+      <div class="edit-nav">
+        <i class="nav-logo fa fa-rotate-left" id="undo"></i>
+        <i class="nav-logo fa fa-repeat" id="redo"></i> |
+        <i class="nav-logo fa fa-bold" id="bold"></i>
+        <i class="nav-logo fa fa-chain" id="chain"></i>
+        <i class="nav-logo fa fa-italic" id="italic"></i>
+        <i class="nav-logo fa fa-underline" id="underline"></i>
+
+        <i class="nav-logo fa fa-image" id="image"></i> |
+        <!-- <input type="file" class="nav-logo fa fa-image" id="image"></input> |  -->
+        <i class="nav-logo fa fa-header" id="h1">1</i>
+        <i class="nav-logo fa fa-header" id="h2">2</i>
+        <i class="nav-logo fa fa-header" id="h3">3</i>
+        <i class="nav-logo fa fa-header" id="h4">4</i> |
+        <i class="nav-logo" id="tab">TAB</i>
+      </div>
+      <div class="edit-content">
+        <div class="edit-text-input">
+          <p class="tip"><span class="fa fa-pencil"></span> Markdown编辑器</p>
+          <textarea class="text" id="text-input" 0 rows="6" cols="60"></textarea>
+        </div>
+        <div class="edit-preview">
+          <p class="tip"><span class="fa fa-eye"></span> 实时预览<span class="fa fa-expand"></span></p>
+          <div class="view" id="preview"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-wrap">
+
+  </div>
+
+</body>
+
+</html>

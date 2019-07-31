@@ -1,0 +1,72 @@
+.logo{
+    display: inline-block;
+    height: inherit;
+    width: 186px;
+    font-size: 14px;
+    border-right: 1px solid #999;
+    position: relative;
+    top: -38px;
+}
+.logo_img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.logo .logo_text{
+    height: 15px;
+    width: 85px;
+    line-height: 15px;
+    position: relative;
+    top: 19px;
+    margin: 0 10px;
+}
+.ng-isolate-scope {
+    background: #fff;
+}
+
+.nav-container{
+    height: 50px;
+    width: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background: #fff;
+    box-shadow: 5px  5px 5px rgb(216, 216, 216);
+}
+.n0_sytle{
+    background: #fff;
+    border-color: #d9d9d9;
+}
+
+.shrink-btn{
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    vertical-align: middle;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    background: #fff;
+    color: #555;
+    outline: none;
+    cursor: pointer;
+
+    position: relative;
+    top: -22px;
+}
+.shrink-btn:hover{
+    background: rgb(240, 239, 239);
+}
+.userInfo{
+    float: right;
+    margin: 15px;
+}
+.userInfo .user.login{
+    margin-right: 5px;
+    font-size: 16px;
+    display: none;
+}
+.logout{
+    font-size: 15px;
+    margin-left: 10px;
+}

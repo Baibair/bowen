@@ -1,0 +1,15 @@
+{{#list}}
+<table class="main-table" data-id="{{contentId}}" >
+    <tr>
+        <td class="main-cell cell-product"><a class="link">{{title}}</a></td>
+        
+        <td class="main-cell cell-delete">
+           <span class="fa fa-trash-o delete ope"></span>
+        </td>
+        <td class="main-cell cell-rec">
+           <span class="fa fa-recycle rec ope"></span>
+        </td>
+    </tr>
+</table>
+{{/list}}
+

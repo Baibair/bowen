@@ -1,0 +1,69 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ebebeb;
+    font: 14px/1.5 tahoma,arial,Microsoft YaHei,sans-serif;
+    position: relative;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+/* 定宽布局 */
+/* .w{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+} */
+/* 隐藏类 */
+.hide{
+    display: none;
+}
+/* 超链接样式 */
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.link:hover{
+    color: rgb(16, 148, 255);
+}
+.link-text{
+    color:#999;
+    text-decoration: none;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    /* height与line-height一起使用能让文字垂直居中 */
+    vertical-align: middle;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    /* -webkit-border-radius: 4px; */
+    cursor: pointer;
+    border-radius: 4px;
+}
+.content{
+    box-shadow: 5px  5px 5px rgb(199, 199, 199);
+}
+
+/* loading */

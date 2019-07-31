@@ -1,0 +1,44 @@
+<div class="modal close">
+    <div class="modal-container">
+        <div class="modal-header">
+            {{#isUpdate}}
+            <h1 class="modal-title">编辑产品分类</h1>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <h1 class="modal-title">新建产品分类</h1>
+            {{/isUpdate}}
+            <i class="fa fa-close close"></i>  
+        </div>
+        <div class="modal-body">
+            <div class="form" id= "uploadForm" action= "#" method= "post" enctype ="multipart/form-data">
+                <div class="form-line">
+                    <label class="label" for="productName">
+                        <span class="required">*</span>产品分类名称
+                    </label>
+                    <input class="form-item" id="productName" placeholder="请输入产品分类名称" value="{{data.productName}}" />
+                </div>
+                <div class="form-line">
+                    <label class="label" for="productIcon">
+                        <span class="required">*</span>
+                        产品分类icon
+                    </label>
+                    <button class="btn ibtn">上传icon</button>
+                    <input type="file" class="ibtn-h" id="pic" accept="image/gif, image/jpeg" />
+                    <input class="form-item" id="productIcon" placeholder="请上传图片" value="{{data.productIcon}}" />
+                </div>
+                <div class="form-line">
+                    <label class="label" for="productDes">
+                        <span class="required">*</span>
+                        产品分类描述
+                    </label>
+                    <input class="form-item" id="productDes" placeholder="请产品分类描述" value="{{data.productInstr}}" />
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <input type="submit" class="btn btn-true"></input>
+            <button class="btn btn-false">取消</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="modal close">
+    <div class="modal-container">
+        <div class="modal-header">
+            {{#isUpdate}}
+            <h1 class="modal-title">编辑一级分类</h1>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <h1 class="modal-title">新建一级分类</h1>
+            {{/isUpdate}}
+            <i class="fa fa-close close"></i>  
+        </div>
+        <div class="modal-body">
+            <div class="form">
+                <div class="form-line">
+                    <label class="label" for="productName">
+                        <span class="required">*</span>一级分类名称
+                    </label>
+                    <input class="form-item" id="fleveName" placeholder="请输入一级分类名称"  data-id={{data.groupId}} value="{{data.groupName}}"/>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-true">确定</button>
+            <button class="btn btn-false">取消</button>
+        </div>
+    </div>
+</div>

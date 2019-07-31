@@ -1,0 +1,11 @@
+<div class="modal2 close2">
+      <div class="modal-container2">
+          <div class="modal-header2">
+            <div class="modal-title2">{{data.title}}</div> 
+            <i class="fa fa-close close"></i> 
+        </div>
+          <div class="modal-body2">
+                 {{{data.html}}}
+          </div>
+          
+      </div>

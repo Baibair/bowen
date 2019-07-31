@@ -1,0 +1,211 @@
+.edit{
+    width: 80%;
+    height: 600px;
+    position: absolute;
+    /* float: right; */
+    top: 100px;
+    left: 280px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #9c9a9a;
+}
+.edit-top{
+    padding: 10px;
+    border-bottom: 1px solid #9c9a9a;
+    background: #4d4b4b;
+    color: #fff;
+}
+.returnCourse{
+    cursor: pointer;
+}
+.edit-top i{
+    margin-right: 5px;
+}
+.save{
+    margin-right:80px;
+    width: 100px;
+    border-radius: 6px;
+    background: rgb(216, 216, 216);
+    color: #000;
+    float: right;
+}
+.edit-head{
+    padding: 15px;
+    margin: 5px 0;
+    background: rgb(94, 94, 94);
+}
+.sign{
+    color: #fff;
+}
+.edit-title-content{
+    width: 300px;
+    height: 20px;
+}
+.edit-class{
+    margin-left: 30px;
+}
+.edit-class-chose{
+    width: 150px;
+    height: 24px;
+}
+.edit-nav{
+    height: 30px;
+    background: #9c9a9a;
+    margin: 5px 0;
+}
+.nav-logo{
+    padding:0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.nav-logo:hover{
+    cursor: pointer;
+}
+.edit-content .tip{
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    margin: 5px;
+    text-align: left;
+}
+.edit-text-input{
+    float: left;
+    width: 49%;
+    height: 460px;
+}
+#text-input{
+    height: 430px;
+    width: 100%;
+    overflow-y: auto;
+}
+.edit-preview{
+    float: right;
+    width: 50%;
+    height: 460px;
+}
+.edit-preview .fa-expand{
+    float: right;
+    cursor: pointer;
+}
+#preview{
+    height: 430px;
+    width: 100%;
+    border: 1px solid #9c9a9a;
+    overflow-y: auto; 
+}
+/* 添加弹出框 */
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    background: rgba(0,0,0,.4);
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal .modal-container{
+    width: 500px;/*框的宽*/
+    margin: 50px auto;
+    /* background: #fff; */
+}
+.modal .modal-container .modal-header{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px; 
+
+}
+.modal-footer{
+    position: relative;
+    padding: 10px 50px;
+    border-top: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px; 
+}
+.modal-footer .btn{
+    margin-left: 85px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+.btn-true{
+    background: #1890ff;
+    /* margin: 0 30px; */
+}
+.btn-true:hover{
+    background: #1479d8;
+}
+.btn-false{
+    background: #e83333;
+    /* margin: 0 30px; */
+}
+.btn-false:hover{
+    background: #cc2c2c;
+}
+.modal .modal-container .modal-header .modal-title{
+    font-size: 14px;
+}
+.modal .modal-container .modal-header .close{
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.modal .modal-container .modal-body{
+    padding: 15px;
+    background: #fff;
+}
+/* 全局预览 */
+/* .modal-wrap2{
+    display: none;
+} */
+.modal2{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    background: rgba(0,0,0,.4);
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal2 .modal-container2{
+    width: 900px;/*框的宽*/
+    height: 600px;
+    margin: 50px auto;
+    /* background: #fff; */
+}
+.modal2 .modal-container2 .modal-header2{
+    height: 20px;
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+    
+
+}
+.modal2 .modal-container2 .modal-header2 .modal-title2{
+    font-size: 14px;
+}
+.modal2 .modal-container2 .modal-header2 .close{
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.modal2 .modal-container2 .modal-body2{
+    padding: 15px;
+    height: inherit;
+    background: #fff;
+    overflow-y: auto;
+}

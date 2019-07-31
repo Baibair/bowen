@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var productList ;
+        function showProducts(){
+            $.ajax({
+                url:'http://eohelp/product/productlist',
+                type:'post',
+                dataType:'json',
+                success:function(res){
+                    var result = eval(res);
+
+                    var target = document.getElementById('productList');
+                    for(var i in res.data.productList){
+                        var product = res.data.productList[i];
+                        target.innerHTML += "<option value ='"+product.productId+"'>"+product.productName+"</option>";
+                    }
+                }
+            })
+        }
+    </script>
+</head>
+<body onload="showProducts()">
+<select id="productList">
+</select>
+</body>
+</html>

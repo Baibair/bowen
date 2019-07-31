@@ -1,0 +1,91 @@
+.content{
+    width: 80%;
+    height: 600px;
+    position: absolute;
+    /* float: right; */
+    top: 100px;
+    left: 280px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #9c9a9a;
+}
+.return{
+    color: rgb(114, 113, 113);
+    padding: 5px 10px;
+    border-bottom: 1px solid #c2bdbd;
+}
+.return .fa{
+    margin-right: 3px;
+}
+.index{
+    padding:5px 10px;
+    border-bottom: 1px solid #c2bdbd;
+    color: #9c9a9a;
+    background: #f8f8f8;
+}
+.main-table{
+    width: 100%;
+    border-collapse: collapse;
+    /* border-bottom: 1px solid #c2bdbd; */
+    margin-bottom: 10px;
+}
+
+/* .main-list .main-table{
+    border-top: 1px solid #c2bdbd;
+} */
+.main-table{
+    background:#f8f8f8;
+}
+
+.main-list{
+     overflow-y: auto;
+}
+.main-header .main-table{
+    border-top: 1px solid #c2bdbd;
+}
+.main-header .main-cell{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.main-header .cell-product{
+    width: 30%;
+    text-align: center;
+}
+.main-header .cell-delect{
+    width: 30%;
+    text-align: center;
+}
+.main-header .cell-rec{
+    width: 30%;
+    text-align: center;
+}
+.main-list .main-table:hover{
+    background: #eee;
+}
+.main-table .main-cell{
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+}
+.main-table .cell-product{
+    width: 30%;
+    text-align: center;
+}
+.main-table .cell-delete{
+    width: 30%;
+    text-align: center;
+}
+.main-table .cell-rec{
+    width: 30%;
+    text-align: center;
+}
+.ope{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+

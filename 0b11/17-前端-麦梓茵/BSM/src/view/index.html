@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title%>-后台教程管理</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav.html')  %>
+    <%= require('html-loader!./layout/nav-side.html')  %>
+    <div class="content move" id="content">
+        <div class="return gr"><span class="return-content link"><i class="fa fa-mail-reply"></i><span
+                    class="return-text">返回一级分类列表</span></span></div>
+        <div class="index gr"><span class="index-text">API Studio > API研发管理</span></div>
+        <div class="new">
+            <button class="newClass pleve" id="pleve"><i class="fa fa-plus fa-fw"></i><span>新建产品分类</span></button>
+            <button class="newClass fleve"><i class="fa fa-plus fa-fw"></i><span>新建一级分类</span></button>
+            <button class="newClass sleve"><i class="fa fa-plus fa-fw"></i><span>新建二级分类</span></button>
+            <button class="newClass tleve"><i class="fa fa-plus fa-fw"></i><span>新建三级分类</span></button>
+        </div>
+        <div class="main-header">
+            <table class="main-table" style="background:#eee;">
+                <tr>
+                    <th class="main-cell cell-product">产品分类</th>
+                    <th class="main-cell cell-good gr"><span class="fa fa-thumbs-o-up"></span> 赞</th>
+                    <th class="main-cell cell-bad gr"><span class="fa fa-thumbs-o-down"></span> 踩</th>
+                    <th class="main-cell cell-readNum gr"><span class="fa fa-eye"></span> 阅读量</th>
+                    <th class="main-cell cell-time">最后编辑时间</th>
+                    <th class="main-cell cell-operate">操作</th>
+                </tr>
+            </table>
+        </div>
+        <div class="main-list">
+
+        </div>
+    </div>
+    <div class="modal-wrap">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<div class="modal close">
+      <div class="modal-container">
+          <div class="modal-header">
+            <h1 class="modal-title">插入图片</h1> 
+            <i class="fa fa-close close"></i> 
+        </div>
+          <div class="modal-body">
+            <input type="file" class="img" id="pic" accept="image/gif, image/jpeg, image/png" />
+                 
+          </div>
+          <div class="modal-footer">
+
+              <button class="btn btn-true">确定</button>
+              <button class="btn btn-false">取消</button>
+          </div>
+      </div>

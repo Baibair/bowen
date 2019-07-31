@@ -1,0 +1,23 @@
+
+.nav{
+    width: 240px;
+    height: 700px;
+    background: #fff;
+    border-right: 1px solid #999;
+    float: left;
+    overflow: hidden;
+    box-shadow: 5px  5px 5px rgb(199, 199, 199);
+}
+.nav-side{
+    width: inherit;
+    height: 50px;
+    line-height: 50px;
+    background: #fff; 
+}
+.nav-side:hover{
+    background: rgb(216, 233, 222);
+}
+.nav-side .side-text{
+    padding: 10px 15px 10px 47px;
+    font-size: 14px;
+}
